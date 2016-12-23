@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>前端工程化从<code>0</code>到<code>1</code></title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/sky.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+    <link rel="stylesheet" href="../reveal/plugin/highlight/styles/dracula.css">
+
+    <link rel="stylesheet" href="../reveal/css/custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+        <section>
+          <h1>前端工程化从<code>0</code>到<code>1</code></h1>
+            <h3>Season Chen</h3>
+          <p>
+            <h4>2016-12-14</h4>
+          </p>
+        </section>
+
+        
+				<section id="第一张幻灯片" class="level2">
+<h2>第一张幻灯片</h2>
+<p>可以支持中文。请看列表</p>
+<ul>
+<li>第一项</li>
+<li>第二项
+<ul>
+<li><a href="http://google.com">Google</a></li>
+<li>还可以在<a href="http://rvl.io" class="uri">http://rvl.io</a>上在线编辑slides</li>
+</ul></li>
+<li>第三项 数学公式 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{x^2}{2}</annotation></semantics></math></li>
+</ul>
+</section>
+<section id="第二张幻灯片" class="level2">
+<h2>第二张幻灯片</h2>
+<p>尝试逐项出现条目</p>
+<ul>
+<li class="fragment">
+第一项
+</li>
+<li class="fragment">
+第二项
+</li>
+</ul>
+</section>
+<section id="section" class="level2">
+<h2></h2>
+<p>可以没有标题</p>
+<figure>
+<img src="fig/html5.png" alt="图片说明" /><figcaption>图片说明</figcaption>
+</figure>
+</section>
+<section id="表格" class="level2">
+<h2>表格</h2>
+<table>
+<thead>
+<tr class="header">
+<th>name</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>张三</td>
+<td>好人</td>
+</tr>
+<tr class="even">
+<td>李四</td>
+<td>坏人</td>
+</tr>
+</tbody>
+</table>
+<p>表格的样式我放在/css/custom.css里了</p>
+</section>
+<section id="变量" class="level2">
+<h2>变量</h2>
+<p>下面两个是可以在命令行中定义的变量</p>
+<ul>
+<li>theme</li>
+<li>transition</li>
+</ul>
+<pre class="html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    alert(1)
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>windows下的情况请看本项目repo中的<a href="https://github.com/yanping/reveal.js-with-pandoc/blob/gh-pages/build.bat">bat文件</a></p>
+</section>
+
+			</div>
+		</div>
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'cube', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{
+            src: '../reveal/lib/js/classList.js',
+            condition: function() { return !document.body.classList; }
+          },
+					{
+            src: '../reveal/plugin/markdown/marked.js',
+            condition: function() { return !!document.querySelector( '[data-markdown]' ); }
+          },
+					{
+            src: '../reveal/plugin/markdown/markdown.js',
+            condition: function() { return !!document.querySelector( '[data-markdown]' ); }
+          },
+					{
+            src: '../reveal/plugin/highlight/highlight.pack.js',
+            async: true,
+            callback: function() { hljs.initHighlightingOnLoad(); }
+          },
+					{
+            src: '../reveal/plugin/zoom-js/zoom.js',
+            async: true
+          },
+					{
+            src: '../reveal/plugin/notes/notes.js',
+            async: true
+          }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
